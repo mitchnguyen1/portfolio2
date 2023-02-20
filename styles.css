@@ -1,0 +1,126 @@
+::-webkit-scrollbar {
+    display: none;
+}
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: rgb(18,24,85);
+  }
+
+html, body {
+    width:  100%;
+    height: 100%;
+    margin: 0;
+    background-color: rgb(18,24,85);
+  }
+  
+#mobileSite{
+    font-family: 'Shantell Sans', cursive;
+    color: rgb(255, 255, 255);
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(img/blue.png);
+}
+
+#mobileText{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#name {
+    position: absolute;
+    bottom: 0;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+    #mobileSite {
+      display: flex;
+    }
+    header, #threeD, #about {
+        display: none;
+      }
+  }
+
+.navbar{
+    background-color: transparent;
+    width: 100%; 
+    text-align: center;
+}
+
+
+
+.navbar-brand{
+    color: white !important;
+    font-size: 30px !important;
+}
+
+#threeD{
+      margin: 0 !important;
+      height: 100% !important;
+      background-color: rgb(18,24,85);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+  }
+canvas {
+    display: block;
+    margin: 0 auto;
+    height:  90% !important; /* set the height to 100% to fill the available vertical space */
+    width: 100% !important; /* set the width to auto to maintain the aspect ratio */
+}
+
+#canvas3d {
+    display: none;
+  }
+
+
+.loader {
+    border: 16px solid #f3f3f3; 
+    border-top: 16px solid #3498db; 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+.loadText{
+    color: white;
+}
+
+
+#about{
+    background-color: rgb(18,24,85);
+    margin: 0 !important;
+    height: 98vh;
+    color: white;
+    text-align: center;
+}
+
+#projects{
+    background-color: rgb(18,24,85);
+    margin: 0 !important;
+    height: 98vh;
+    color: white;
+    text-align: center;
+}
+
+#contact{
+    background-color: rgb(18,24,85);
+    margin: 0 !important;
+    height: 98vh;
+    color: white;
+    text-align: center;
+}
