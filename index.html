@@ -8,7 +8,7 @@
     <link rel="preload" href="https://prod.spline.design/L1AgPNi3uqvRpzqH/scene.splinecode" as="fetch">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Shantell+Sans:wght@800&display=swap" rel="stylesheet">
   </head>
   <body>
     <section id="mobileSite">
@@ -19,19 +19,18 @@
     <header>
       <nav class="navbar fixed-top navbar-light justify-content-center">
         <div class="navlink">
-          <a class="navbar-brand" href="#threeD">Home</a>
-          <a class="navbar-brand" href="#about">About</a>
-          <a class="navbar-brand" href="#projects">Projects</a>
-          <a class="navbar-brand" href="#contact">Contact</a>
+          <a class="navbar-brand" href="#threeD" id="navHome" style="color: red">Home</a>
+          <a class="navbar-brand" href="#about" id="navAbout" style="color: white" >About</a>
+          <a class="navbar-brand" href="#projects" id="navProj" style="color: white">Projects</a>
+          <a class="navbar-brand" href="#contact" id="navCon" style="color: white">Contact</a>
         </div>
       </nav>
     </header>
 
     <section id="threeD">
-      <div class="loader"></div>
-      <div class="loadText"><h1>Loading...</h1></div>
+        <div class="loader"></div>
+        <div class="loadText"><h1>Loading...</h1></div>
       <canvas id="canvas3d"></canvas>
-      <a class="logo" href="https://spline.design"></a>
     </section>
 
     <section id="about">
@@ -50,6 +49,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <script src="main.js" type="module"></script>
+    <script src="splineScript.js" type="module"></script>
+
 </body>
 </html>
