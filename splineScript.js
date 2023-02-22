@@ -10,7 +10,7 @@ const app = new Application(canvas);
 canvas.style.display = 'none';
 nav.style.display = 'none';
 // document.documentElement.style.overflowY = 'hidden';
-// document.body.style.overflowY = 'hidden';
+document.body.style.overflowY = 'hidden';
 
 // load the scene
 app.load('./scene.splinecode').then(() => {
@@ -36,7 +36,7 @@ window.onscroll = function(){
   con.style.color="white";
 console.log(top);
   if(top <= 1250){
-    nav.style.backgroundColor = "rgb(45,51,141)";
+    nav.style.backgroundColor = "rgb(62,17,131)";
     home.style.color="Red";
     about.style.color="white";
     proj.style.color="white";
