@@ -4,6 +4,7 @@ const loader = document.querySelector('.loader');
 const loadText = document.querySelector('.loadText');
 const threeD = document.getElementById('threeD');
 const nav = document.querySelector('.navbar');
+const box = document.querySelector('.box');
 const app = new Application(canvas);
 
 // hide the canvas and navbar and scroll initially
@@ -20,6 +21,7 @@ app.load('./scene.splinecode').then(() => {
   loader.style.display = 'none';
   loadText.style.display = 'none';
   threeD.style.backgroundImage = "none";
+  box.style.display="block";
   // enable scrolling again
   document.body.style.overflowY = 'auto';
 });

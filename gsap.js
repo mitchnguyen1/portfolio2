@@ -1,16 +1,37 @@
 gsap.registerPlugin(ScrollTrigger);
 
+let about = document.querySelector("#about")
 
-let tlAbout = gsap.timeline({
-    scrollTrigger:{
-        trigger:"#about",
-        scrub: true,
-        pin: true,
-        start: "top top",
-        end: "+=100%",
-        markers: true
+gsap.fromTo(
+    about,
+    {
+        clipPath: "circle(5% at 50% 8%)",
+    },
+    {
+        clipPath: "circle(75% at 50% 50%)",
+        ease: "none",
+        
+      //  We want to do that animation on scroll
+        scrollTrigger: {
+        trigger: about,
+        scrub: 1,
+        start: "top center",
+        end: "top center-=200",
+        },
     }
-});
+);
+
+
+// let tlAbout = gsap.timeline({
+//     scrollTrigger:{
+//         trigger:"#about",
+//         scrub: true,
+//         pin: true,
+//         start: "top top",
+//         end: "+=100%",
+//         markers: true
+//     }
+// });
 
 
 
