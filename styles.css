@@ -46,8 +46,11 @@ html, body {
     #mobileSite {
       display: flex;
     }
-    header, #threeD, #about {
+    header, #threeD, #about, #canvas3d {
         display: none;
+      }
+    html, body {
+      touch-action: none
       }
   }
 
