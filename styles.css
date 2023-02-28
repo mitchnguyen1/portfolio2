@@ -55,7 +55,7 @@ html, body {
   }
 
 .navbar{
-    background-color: rgb(62,17,131);
+    background-color: transparent;
     width: 100%; 
     text-align: center;
     font-family: 'Kanit', sans-serif;
@@ -151,47 +151,153 @@ canvas {
   to { margin-top: 23px; }
 }
 
-
 #about{
-    background-color: rgb(62,17,131);
-    margin: 0 !important;
-    height: 98vh;
-    color: white;
-    text-align: center;
+  background-color: rgb(62,17,131);
+  margin: 0 !important;
+  height: 105vh;
+  color: white;
+  text-align: center;
+
 }
 
 .abouttext{
-  padding-top: 4vh;
-  font-size: 5vh
+padding-top: 4vh;
+font-size: 9vh;
+padding-top: 5rem;
 }
 
 .aboutbody{
-  font-size: 3vh;
-  margin: 5vh 20vh;
+font-size: 3vh;
+margin: 5rem 30vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
 }
 
-.skillList {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.list1, .list2, .list3 {
-  float: left;
-  width: 30%;
+:root {
+  --color-primary: #f6d3a2;
+  --color-secondary: #f49b90;
+  --color-tertiary: #f28b7d;
+  --color-quaternary: #f07a6a;
+  --color-quinary: #ee6352;
 }
 
-ul {
-  list-style-position: inside;
-  padding-left: 0;
-  font-size: 3vh;
+
+.abouttext {
+  text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+    9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+  font-family: bungee, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: calc(2rem + 5vw);
+  text-align: center;
+  margin: 0;
+  color: var(--color-primary);
+  animation: shadows 1.2s ease-in infinite;
+  letter-spacing: 0.4rem;
 }
+
+@keyframes shadows {
+  0% {
+    text-shadow: none;
+  }
+  10% {
+    transform: translate(-3px, -3px);
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  20% {
+    transform: translate(-6px, -6px);
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary);
+  }
+  30% {
+    transform: translate(-9px, -9px);
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  40% {
+    transform: translate(-12px, -12px);
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  50% {
+    transform: translate(-12px, -12px);
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  60% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  70% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  80% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary);
+  }
+  90% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+.button{
+  font-size: 2rem;
+  border-radius: 10rem;
+}
+
+#skills{
+  background-color: rgb(62,17,131);
+  height: 100%;
+}
+.skilltext{
+  color: white;
+  font-size: 9vh;
+  text-align: center;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 20px;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 10rem;
+  height: 14rem;
+  margin: 10px;
+}
+.card-body{
+  text-align: center;
+  font-size: 1.5rem;
+}
+
 #projects{
-    background-color: rgb(18,24,85);
+    background-color: rgb(62,17,131);
     margin: 0 !important;
-    height: 98vh;
+    padding-top: 10rem;
+    height: 100%;
     color: white;
     text-align: center;
+}
+
+#projectText{
+  font-size: 9vh;
 }
 
 #contact{
