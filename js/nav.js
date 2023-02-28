@@ -6,38 +6,38 @@ window.onscroll = function(){
     let proj =  document.getElementById("navProj");
     let con =  document.getElementById("navCon");
     const nav = document.querySelector('.navbar');
-    home.style.color="red";
+    home.style.color="#FF6D00";
     about.style.color="white";
     proj.style.color="white";
     con.style.color="white";
   console.log(top);
     if(top < 900){
       nav.style.backgroundColor = "transparent";
-      home.style.color="Red";
+      home.style.color="#FF6D00";
       about.style.color="white";
       proj.style.color="white";
       con.style.color="white";
     }
     else if (top >= 900 && top < 2218){
-      nav.style.backgroundColor = "rgb(18,24,85)";
+      nav.style.backgroundColor ="transparent";
       home.style.color="white";
-      about.style.color="red";
+      about.style.color="#FF6D00";
       proj.style.color="white";
       con.style.color="white";
     }
     else if(top >= 2218 && top < 3700 ){
-      nav.style.backgroundColor = "pink";
+      nav.style.backgroundColor ="transparent";
       home.style.color="white";
       about.style.color="white";
-      proj.style.color="red";
+      proj.style.color="#FF6D00";
       con.style.color="white";
     }
     else if(top >= 3700){
-      nav.style.backgroundColor = "green";
+      nav.style.backgroundColor = "transparent";
       home.style.color="white";
       about.style.color="white";
       proj.style.color="white";
-      con.style.color="red";
+      con.style.color="#FF6D00";
     }
   }
   
