@@ -21,7 +21,19 @@ gsap.fromTo(
     }
 );
 
-
+gsap.from(".button", {
+    y: 100,
+    opacity: 0,
+    ease: "elastic.out(2,1.5)", // add a spring effect
+    duration: 2,
+    delay: 0.7, // add a delay for a better effect
+    scrollTrigger: {
+      trigger: ".button",
+      start: "top bottom", // start the animation when the button is in view
+      toggleActions: "play none none reverse", // reverse the animation when scrolling up
+    },
+  });
+  
 // let tlAbout = gsap.timeline({
 //     scrollTrigger:{
 //         trigger:"#about",
