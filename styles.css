@@ -330,7 +330,7 @@ button:active {
   font-size: 2.7rem;
   font-weight: bold;  
   border: none;
-  color: white;
+  color: rgb(229, 229, 229);
 }
 
 #skills{
