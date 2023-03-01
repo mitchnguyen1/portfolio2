@@ -9,7 +9,7 @@ gsap.fromTo(
     },
     {
         clipPath: "circle(75% at 50% 50%)",
-        ease: "none",
+        ease: "sine",
         
       //  We want to do that animation on scroll
         scrollTrigger: {

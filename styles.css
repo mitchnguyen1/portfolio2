@@ -130,7 +130,7 @@ canvas {
     top: 0;
     width: 80px;
     height: 130px;
-    background: rgb(0, 0, 0);
+    background: #e43833;
     -moz-border-radius: 50px 50px 0 0;
     border-radius: 50px 50px 0 0;
     -webkit-transform: rotate(-45deg);
