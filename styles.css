@@ -55,6 +55,15 @@ html, body {
       }
   }
 
+  @media screen and (max-width: 1210px) {
+    .aboutbody{
+      font-size: 1rem;
+      margin-left: 2rem !important;
+      margin-right: 2rem !important;
+      margin-top: 5rem !important;
+      margin-bottom: 5rem !important;
+      }
+  }
 .navbar{
     background-color: transparent;
     width: 100%; 
@@ -194,15 +203,10 @@ canvas {
   background: linear-gradient(to bottom, #3e1183, #815AC0);
   clip-path: circle(75% at 50% 50%);
   margin: 0 !important;
-  height: 105vh;
+  height: 110vh;
   color: white;
   text-align: center;
-
-}
-
-.abouttext{
-font-size: 9vh;
-padding-top: 5rem;
+  /* border: 2px solid red; */
 }
 
 .aboutbody{
@@ -229,6 +233,8 @@ justify-content: center;
 
 
 .abouttext {
+  font-size: 9vh;
+  padding-top: 7rem;
   text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
     9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
   font-family: bungee, sans-serif;
@@ -331,21 +337,35 @@ button:active {
   background-color: #815AC0;
   background: linear-gradient(to bottom, #815AC0, #B185DB);
   height: auto;
-  border: 3px black solid;
+  /* border: 3px black solid; */
 }
 .skilltext{
   color: white;
   font-size: 9vh;
   text-align: center;
-  padding-bottom: 4rem;
+  text-decoration-color: initial;
+  margin: 0;
 }
+
+.line-mf {
+  width: 100px;
+  height: 5px;
+  background-color: #cc0000;
+  margin: 0 auto;
+}
+.skilldesc{
+  color: white;
+  text-align: center;
+  padding-bottom: 4rem;
+  margin-top: 1rem;
+}
+
 .card-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-row-gap: 20px;
   justify-items: center;
   align-items: center;
-  margin-bottom: 20px;
 }
 
 .card {

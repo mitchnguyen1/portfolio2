@@ -30,7 +30,7 @@ gsap.from(".button", {
     scrollTrigger: {
       trigger: ".button",
       start: "top bottom", // start the animation when the button is in view
-      toggleActions: "play none none reverse", // reverse the animation when scrolling up
+      toggleActions: "play none none none", 
     },
   });
   

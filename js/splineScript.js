@@ -10,16 +10,6 @@ const app = new Application(canvas);
 canvas.style.display = 'none';
 nav.style.display = 'none';
 document.body.style.overflowY = 'hidden';
-// start the heartbeat animation
-TweenMax.fromTo(heart, 0.6, {
-  visible: true,
-  scale: 1.5
-}, {
-  scale: 2.4,
-  repeat: 5,
-  duration: 4,
-  yoyo: true
-});
 
 // // load the scene and enclose into the heart
 setTimeout(() => {
