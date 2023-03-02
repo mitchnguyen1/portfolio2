@@ -30,8 +30,8 @@
     <section id="threeD">
       
       <div id="heart"></div>
-       <canvas id="canvas3d"></canvas>
-      <div class="box">
+       <!-- <canvas id="canvas3d"></canvas> -->
+      <div class="box1">
         W-Forward
         S-Backward <br>
         A-Left
@@ -39,19 +39,18 @@
         &uarr;(Up Arrow)-Up <br>
         &darr;(Down Arrow)-Down 
         <i></i></div>
-    </section>
-
-    <section id="about">
+      </section>
+      
+      <section id="about">
         <h1 class="abouttext">About</h1>
         <p class="aboutbody">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         <button class="button">Download Resume</button>
-    </section>
+      </section>
       
-    
-    <section id="skills">
+      
+      <section id="skills">
         <h1 class="skilltext">Skills</h1>
         <div class="line-mf"></div>
-        <h3 class="skilldesc">(Move Me Around)</h3>
         <div class="card-container">
           <div class="card" id="python">
             <img src="img/python.svg" class="card-img-top" alt="python">
@@ -126,6 +125,14 @@
             </div>
           </div>
         </div>
+        <div class="box2">
+          To move a card, simply click and hold on the card you want to move, 
+          and then drag it to a new position!
+          <button class="close-box">Close</button>
+          <i></i></div>
+          <div class="button-container">
+            <button class="reset">Reset</button>
+          </div>
     </section>
       
     <section id="projects">
@@ -140,13 +147,13 @@
 
   <script src="js/splineScript.js" type="module"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Draggable.min.js" integrity="sha512-cGS9y5MepPe9pI2nibL3W1n4ImVcgcvipKjl0IXmgMgXlrwIX0bc2lm4QgMRtEnyN+k/ct0a5iCaqo9cXYgNGA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Draggable.min.js" integrity="sha512-cGS9y5MepPe9pI2nibL3W1n4ImVcgcvipKjl0IXmgMgXlrwIX0bc2lm4QgMRtEnyN+k/ct0a5iCaqo9cXYgNGA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   <script src="js/heart.js" type="module"></script>
+  <script src="js/card.js" type="module" defer></script>
   <script src="js/gsap.js" type="module"></script>
   <script src="js/nav.js" type="module"></script>
-  <script src="js/card.js" type="module"></script>
 </body>
 </html>

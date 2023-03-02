@@ -11,29 +11,33 @@ const docker = document.getElementById("docker")
 const spring = document.getElementById("spring")
 const gsap = document.getElementById("gsap")
 const git = document.getElementById("git")
+const reset =  document.querySelector('.reset');
+
+
+
+//reset cards position
+reset.addEventListener('click',() =>{
+    TweenLite.set("#python", {clearProps:"x,y"});
+    TweenLite.set("#java", {clearProps:"x,y"});
+    TweenLite.set("#javascript", {clearProps:"x,y"});
+    TweenLite.set("#html", {clearProps:"x,y"});
+    TweenLite.set("#css", {clearProps:"x,y"});
+    TweenLite.set("#boot", {clearProps:"x,y"});
+    TweenLite.set("#mysql", {clearProps:"x,y"});
+    TweenLite.set("#post", {clearProps:"x,y"});
+    TweenLite.set("#docker", {clearProps:"x,y"});
+    TweenLite.set("#spring", {clearProps:"x,y"});
+    TweenLite.set("#gsap", {clearProps:"x,y"});
+    TweenLite.set("#git", {clearProps:"x,y"});
+})
 
 Draggable.create("#python",{
     bounds: container,
     type: "x,y",
     liveSnap: {
         points: [
-            //first row
             {x:0, y:0},
-            {x:480, y:0},
-            {x:958, y:0},
-            {x:1436, y:0},
-            //second row
-            {x:0, y:325},
-            {x:480, y:325},
-            {x:958, y:325},
-            {x:1436, y:325},
-            //third row
-            {x:0, y:650},
-            {x:480, y:650},
-            {x:958, y:650},
-            {x:1436, y:650},
-   
-        ],
+            ],
         radius: 50
     }
 })
@@ -43,21 +47,7 @@ Draggable.create("#java",{
     type: "x,y",
     liveSnap: {
         points: [
-            //first row
             {x:0, y:0},
-            {x:480, y:0},
-            {x:958, y:0},
-            {x:-480, y:0},
-            //second row
-            {x:0, y:325},
-            {x:480, y:325},
-            {x:-480, y:325},
-            {x:958, y:325},
-            //third row 
-            {x:0, y:650},
-            {x:480, y:650},
-            {x:958, y:650},
-            {x:-480, y:650},
         ],
         radius: 50
     }
@@ -68,22 +58,8 @@ Draggable.create("#javascript",{
     type: "x,y",
     liveSnap: {
         points: [
-            //first row
             {x:0, y:0},
-            {x:480, y:0},
-            {x:-480, y:0},
-            {x:-958, y:0},
-            //second row
-            {x:0, y:325},
-            {x:-958, y:325}, 
-            {x:-480, y:325},
-            {x:480, y:325},
-            //third row
-            {x:0, y:650},
-            {x:-958, y:650},
-            {x:-480, y:650},
-            {x:480, y:650},
-        ],
+            ],
         radius: 50
     }
 })
@@ -93,22 +69,8 @@ Draggable.create("#html",{
     type: "x,y",
     liveSnap: {
         points: [
-            //first row
             {x:0, y:0},
-            {x:-480, y:0},
-            {x:-958, y:0},
-            {x:-1436, y:0},
-            //second row
-            {x:0, y:325},
-            {x:-958, y:325},
-            {x:-1436, y:325},
-            {x:-480, y:325},
-            //third row
-            {x:-480, y:650},
-            {x:-958, y:650},
-            {x:-1436, y:650},
-            {x:0, y:650},
-        ],
+                 ],
         radius: 50
     }
 })
@@ -117,24 +79,10 @@ Draggable.create("#css",{
     bounds: container,
     type: "x,y",
     liveSnap: {
-        points: [
-            //first row 
+        points: [ 
             {x:0, y:-325},
-            {x:480, y:-325},
-            {x:958, y:-325},
-            {x:1436, y:-325},
-            //second row
-            {x:0, y:0},
-            {x:480, y:0},
-            {x:958, y:0},
-            {x:1436, y:0},
-            //third row
-            {x:0, y:325},
-            {x:480, y:325},
-            {x:958, y:325},
-            {x:1436, y:325},
         ],
-        radius: 50
+      radius: 50
     }
 })
 
@@ -142,22 +90,8 @@ Draggable.create("#boot",{
     bounds: container,
     type: "x,y",
     liveSnap: {
-        points: [
-            //first row 
+        points: [ 
             {x:0, y:-325},
-            {x:480, y:-325},
-            {x:958, y:-325},
-            {x:-480, y:-325},
-            //second row
-            {x:0, y:0},
-            {x:480, y:0},
-            {x:958, y:0},
-            {x:-480, y:0},
-            //third row 
-            {x:0, y:325},
-            {x:480, y:325},
-            {x:958, y:325},
-            {x:-480, y:325},
         ],
         radius: 50
     }
@@ -167,23 +101,8 @@ Draggable.create("#mysql",{
     bounds: container,
     type: "x,y",
     liveSnap: {
-        points: [
-            //first row 
-            {x:0, y:-325},
-            {x:480, y:-325},
-            {x:-480, y:-325},
-            {x:-958, y:-325},
-            //second row
-            {x:0, y:0},
-            {x:480, y:0},
-            {x:-958, y:0},
-            {x:-480, y:0},
-            //last row
-            {x:0, y:325},
-            {x:480, y:325},
-            {x:-480, y:325},
-            {x:-958, y:325},
-        ],
+        points: [ 
+            {x:0, y:-325} ],
         radius: 50
     }
 })
@@ -192,23 +111,8 @@ Draggable.create("#post",{
     bounds: container,
     type: "x,y",
     liveSnap: {
-        points: [
-            {x:0, y:0},
-            //3 to on same row
-            {x:-1436, y:0},
-            {x:-958, y:0},
-            {x:-480, y:0},
-            //first row 
-            {x:0, y:-325},
-            {x:-1436, y:-325},
-            {x:-480, y:-325},
-            {x:-958, y:-325},
-            //last row
-            {x:0, y:325},
-            {x:-1436, y:325},
-            {x:-480, y:325},
-            {x:-958, y:325},
-        ],
+        points: [ 
+            {x:0, y:-325} ],
         radius: 50
     }
 })
@@ -217,23 +121,8 @@ Draggable.create("#docker",{
     bounds: container,
     type: "x,y",
     liveSnap: {
-        points: [
-            //first row
-            {x:0, y:-650},
-            {x:1436, y:-650},
-            {x:480, y:-650},
-            {x:958, y:-650},
-            //second row
-            {x:0, y:-325},
-            {x:1436, y:-325},
-            {x:480, y:-325},
-            {x:958, y:-325},
-            //third
-            {x:0, y:0},
-            {x:1436, y:0},
-            {x:958, y:0},
-            {x:480, y:0},
-        ],
+        points: [ 
+            {x:0, y:-325} ],
         radius: 50
     }
 })
@@ -242,23 +131,8 @@ Draggable.create("#spring",{
     bounds: container,
     type: "x,y",
     liveSnap: {
-        points: [
-            //first row
-            {x:0, y:-650},
-            {x:-480, y:-650},
-            {x:480, y:-650},
-            {x:958, y:-650},
-            //second row
-            {x:0, y:-325},
-            {x:-480, y:-325},
-            {x:480, y:-325},
-            {x:958, y:-325},
-            //third
-            {x:0, y:0},
-            {x:-480, y:0},
-            {x:958, y:0},
-            {x:480, y:0},
-        ],
+        points: [ 
+            {x:0, y:-325} ],
         radius: 50
     }
 })
@@ -268,22 +142,8 @@ Draggable.create("#gsap",{
     type: "x,y",
     liveSnap: {
         points: [
-            //first row
             {x:0, y:-650},
-            {x:-480, y:-650},
-            {x:480, y:-650},
-            {x:-958, y:-650},
-            //second row
-            {x:0, y:-325},
-            {x:-958, y:-325},
-            {x:480, y:-325},
-            {x:-480, y:-325},
-            //third
-            {x:-958, y:0},
-            {x:-480, y:0},
-            {x:0, y:0},
-            {x:480, y:0},
-        ],
+            ],
         radius: 50
     }
 })
@@ -293,22 +153,8 @@ Draggable.create("#git",{
     type: "x,y",
     liveSnap: {
         points: [
-            //first row
             {x:0, y:-650},
-            {x:-480, y:-650},
-            {x:-1436, y:-650},
-            {x:-958, y:-650},
-            //second row
-            {x:0, y:-325},
-            {x:-958, y:-325},
-            {x:-1436, y:-325},
-            {x:-480, y:-325},
-            //third
-            {x:-958, y:0},
-            {x:-480, y:0},
-            {x:0, y:0},
-            {x:-1436, y:0},
-        ],
+                  ],
         radius: 50
     }
 })

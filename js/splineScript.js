@@ -2,7 +2,7 @@ import { Application } from '../runtime.js';
 const canvas = document.getElementById('canvas3d');
 const threeD = document.getElementById('threeD');
 const nav = document.querySelector('.navbar');
-const box = document.querySelector('.box');
+const box = document.querySelector('.box1');
 const heart = document.getElementById('heart');
 const app = new Application(canvas);
 

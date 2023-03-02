@@ -163,7 +163,7 @@ canvas {
     to { transform: scale(1.5); }
   }
   
-.box {
+.box1 {
   display: none;
   position:absolute;
   bottom:7vh;
@@ -182,8 +182,8 @@ canvas {
               inset 0 1px 0 1px black,
               0 0 0 1px black,
               inset 0 0 0 1px black;
-}
-.box > i {
+            }
+.box1 > i {
   width: 0;
   height: 0;
   border: 5px solid transparent;
@@ -192,7 +192,42 @@ canvas {
   animation: bounce 0.5s ease-in-out 0 infinite alternate;
   float: right;
 }
-
+.box2 {
+  display: block;
+  position:absolute;
+  bottom:25vh;
+  z-index:2;
+  font-size: 2vh;
+  font-family: "Pokemon GB", Arial, sans-serif;
+  border-radius: 2px;
+  padding: 8px;
+  width: 60vh;
+  height: 18vh;
+  margin-top: 3vh;
+  line-height: 3vh;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border: 1px solid white;
+  box-shadow: 0 1px 0 1px black,
+              inset 0 1px 0 1px black,
+              0 0 0 1px black,
+              inset 0 0 0 1px black;
+}
+.box2 > i {
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top-color: black;
+  margin-top: 23px;
+  animation: bounce 0.5s ease-in-out 0 infinite alternate;
+  float: right;
+}
+.box2 button {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
 @keyframes bounce {
   from { margin-top: 20px; }
   to { margin-top: 23px; }
@@ -234,7 +269,7 @@ justify-content: center;
 
 .abouttext {
   font-size: 9vh;
-  padding-top: 7rem;
+  padding-top: 6.5rem;
   text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
     9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
   font-family: bungee, sans-serif;
@@ -298,7 +333,7 @@ justify-content: center;
     text-shadow: none;
   }
 }
-button {
+.button {
   --c:  #FF9100; /* the color*/
   
   box-shadow: 0 0 0 .1em inset var(--c); 
@@ -312,11 +347,11 @@ button {
   outline-offset: .1em;
   transition: background-size .4s, background-position 0s .4s;
 }
-button:hover {
+.button:hover {
   --_p: 100%;
   transition: background-position .4s, background-size 0s;
 }
-button:active {
+.button:active {
   box-shadow: 0 0 9e9q inset #0009; 
   background-color: var(--c);
   color: #fff;
@@ -336,34 +371,35 @@ button:active {
 #skills{
   background-color: #815AC0;
   background: linear-gradient(to bottom, #815AC0, #B185DB);
-  height: auto;
-  /* border: 3px black solid; */
+  height: 120vh;
+  border: 3px solid red;
 }
 .skilltext{
   color: white;
   font-size: 9vh;
   text-align: center;
   text-decoration-color: initial;
+  margin-top: 3rem !important;
   margin: 0;
 }
 
+.button-container {
+  text-align: center;
+}
 .line-mf {
   width: 100px;
   height: 5px;
   background-color: #cc0000;
   margin: 0 auto;
 }
-.skilldesc{
-  color: white;
-  text-align: center;
-  padding-bottom: 4rem;
-  margin-top: 1rem;
+.reset{
+  align-content: center;
 }
 
 .card-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-row-gap: 20px;
+  grid-row-gap: 5px;
   justify-items: center;
   align-items: center;
 }
@@ -382,7 +418,7 @@ button:active {
   background-color: #B185DB;
   background: linear-gradient(to bottom, #B185DB, #DEC9E9);
     margin: 0 !important;
-    padding-top: 10rem;
+    padding-top: 6rem;
     height: 100%;
     color: white;
     text-align: center;

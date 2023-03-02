@@ -10,7 +10,7 @@ window.onscroll = function(){
     about.style.color="white";
     proj.style.color="white";
     con.style.color="white";
-  console.log(top);
+  // console.log(top);
     if(top < 999){
       nav.style.backgroundColor = "transparent";
       home.style.color="#FF6D00";

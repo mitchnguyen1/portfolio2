@@ -1,11 +1,14 @@
 gsap.registerPlugin(ScrollTrigger);
 
+const box = document.querySelector(".box2");
 let about = document.querySelector("#about")
+let close = document.querySelector(".close-box")
 
+//about section curtains
 gsap.fromTo(
     about,
     {
-        clipPath: "circle(4% at 49.5% 17.5%)",
+        clipPath: "circle(3.5% at 49.65% 17%)",
     },
     {
         clipPath: "circle(75% at 50% 50%)",
@@ -20,7 +23,7 @@ gsap.fromTo(
         },
     }
 );
-
+//resume download button
 gsap.from(".button", {
     y: 100,
     opacity: 0,
@@ -34,45 +37,40 @@ gsap.from(".button", {
     },
   });
   
-// let tlAbout = gsap.timeline({
-//     scrollTrigger:{
-//         trigger:"#about",
-//         scrub: true,
-//         pin: true,
-//         start: "top top",
-//         end: "+=100%",
-//         markers: true
-//     }
-// });
+
+//skills cards movement
+var tlCard = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#skills",
+      scrub: true,
+      pin: true,
+      start: "top top",
+      end: "+=100%"
+    }
+  });
+  tlCard.fromTo("#java", {y: -500, autoAlpha: 0}, {y: 0, autoAlpha: 1, duration: 2})
+  .fromTo("#boot", {x: -500, autoAlpha: 0}, {x: 0, autoAlpha: 1, duration: 2}, 0)
+  .fromTo("#spring", {y: 500, autoAlpha: 0}, {y: 0, autoAlpha: 1, duration: 2},0)
+  .fromTo("#javascript", {y: -500, autoAlpha: 0}, {y: 0, autoAlpha: 1, duration: 2},0)
+  .fromTo("#gsap", {y: 500, autoAlpha: 0}, {y: 0, autoAlpha: 1, duration: 2}, 0)
+  .fromTo("#mysql", {x: 500, autoAlpha: 0}, {x: 0, autoAlpha: 1, duration: 2}, 0);
+  tlCard.fromTo("#python", {y: -500, autoAlpha: 0}, {y: 0, autoAlpha: 1, duration: 2},1)
+  .fromTo("#css", {x: -500, autoAlpha: 0}, {x: 0, autoAlpha: 1, duration: 2}, 1)
+  .fromTo("#docker", {y: 500, autoAlpha: 0}, {y: 0, autoAlpha: 1, duration: 2},1)
+  .fromTo("#html", {y: -500, autoAlpha: 0}, {y: 0, autoAlpha: 1, duration: 2},1)
+  .fromTo("#git", {y: 500, autoAlpha: 0}, {y: 0, autoAlpha: 1, duration: 2}, 1)
+  .fromTo("#post", {x: 500, autoAlpha: 0}, {x: 0, autoAlpha: 1, duration: 2}, 1);
+
+ //skills card instruction 
+tlCard.fromTo(".box2", {y: 500, autoAlpha: 0}, {y: 0, autoAlpha: 1, duration: 2})
+
+
+// Define the button event listener to hide the box2 element when clicked
+close.addEventListener("click", function () {
+ box.style.display = "none";
+});
 
 
 
 
-// let tlProj = gsap.timeline({
-//     scrollTrigger:{
-//         trigger:"#projects",
-//         scrub:1,
-//         pin: true,
-//         markers: true,
-//           snap: {
-//       snapTo: 0.33,
-//       duration: 0.02,
-//       ease: "power1.inOut"
-//     },
-//     }
-// });
 
-
-// let tlCon = gsap.timeline({
-//     scrollTrigger:{
-//         trigger:"#contact",
-//         scrub:1,
-//         pin: true,
-//         markers: true,
-//           snap: {
-//       snapTo: 0.33,
-//       duration: 0.02,
-//       ease: "power1.inOut"
-//     },
-//     }
-// });
