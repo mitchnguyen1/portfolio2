@@ -5,12 +5,12 @@ window.onscroll = function(){
     let about =  document.getElementById("navAbout");
     let proj =  document.getElementById("navProj");
     let con =  document.getElementById("navCon");
-    const nav = document.querySelector('.navbar');
+const nav = document.querySelector('.navbar');
     home.style.color="#FF6D00";
     about.style.color="white";
     proj.style.color="white";
     con.style.color="white";
-  // console.log(top);
+  console.log(top);
     if(top < 999){
       nav.style.backgroundColor = "transparent";
       home.style.color="#FF6D00";
@@ -18,26 +18,25 @@ window.onscroll = function(){
       proj.style.color="white";
       con.style.color="white";
     }
-    else if (top >= 999 && top < 3225){
+    else if (top >= 999 && top < 4966){
       nav.style.backgroundColor ="transparent";
       home.style.color="white";
       about.style.color="#FF6D00";
       proj.style.color="white";
       con.style.color="white";
     }
-    else if(top >= 3225 && top < 3700 ){
+    else if(top >= 4966 && top < 6349 ){
       nav.style.backgroundColor ="transparent";
       home.style.color="white";
       about.style.color="white";
       proj.style.color="#FF6D00";
       con.style.color="white";
-    }
-    else if(top >= 3700){
+        }
+    else if(top >= 6349){
       nav.style.backgroundColor = "transparent";
       home.style.color="white";
       about.style.color="white";
       proj.style.color="white";
       con.style.color="#FF6D00";
     }
-  }
-  
+}

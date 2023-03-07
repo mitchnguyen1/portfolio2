@@ -5,36 +5,33 @@ let about = document.querySelector("#about")
 let close = document.querySelector(".close-box")
 
 //about section curtains
-gsap.fromTo(
+//skills cards movement
+var tlAbout = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#about",
+    scrub: 2,
+    pin: true,
+    start: "top top",
+    end: "+=100%"
+  }
+});
+tlAbout.fromTo(
     about,
     {
-        clipPath: "circle(3.5% at 49.65% 17%)",
+        clipPath: "circle(0% at 49.6% 15%)",
+        duration: 2,
+        ease: "sine.inOut"
     },
     {
         clipPath: "circle(75% at 50% 50%)",
-        ease: "sine",
-        
-      //  We want to do that animation on scroll
-        scrollTrigger: {
-        trigger: about,
-        scrub: 1,
-        start: "top center",
-        end: "top center-=200",
-        },
+        duration: 2,
+        ease: "sine.inOut"
     }
-);
-//resume download button
-gsap.from(".button", {
+).from(".button", {
     y: 100,
     opacity: 0,
     ease: "elastic.out(2,1.5)", // add a spring effect
-    duration: 2,
-    delay: 0.7, // add a delay for a better effect
-    scrollTrigger: {
-      trigger: ".button",
-      start: "top bottom", // start the animation when the button is in view
-      toggleActions: "play none none none", 
-    },
+    duration: 1,
   });
   
 
@@ -71,6 +68,20 @@ close.addEventListener("click", function () {
 });
 
 
+//project section carousel
+ 
+const section_2 = document.getElementById("projects");
+let box_items = gsap.utils.toArray(".projectitem");
 
-
-
+gsap.to(box_items, {
+  xPercent: -100 * (box_items.length - 1),
+  ease: "sine.out",
+  scrollTrigger: {
+    trigger: section_2,
+    pin: true,
+    scrub: 5,
+    snap: 1 / (box_items.length - 1),
+    endTrigger: ".projectitem:last-child",
+    end: "center"
+  }
+});
