@@ -5,7 +5,6 @@ let about = document.querySelector("#about")
 let close = document.querySelector(".close-box")
 
 //about section curtains
-//skills cards movement
 var tlAbout = gsap.timeline({
   scrollTrigger: {
     trigger: "#about",
@@ -68,20 +67,17 @@ close.addEventListener("click", function () {
 });
 
 
-//project section carousel
- 
-const section_2 = document.getElementById("projects");
-let box_items = gsap.utils.toArray(".projectitem");
-
-gsap.to(box_items, {
-  xPercent: -100 * (box_items.length - 1),
-  ease: "sine.out",
+//project section
+var tlproject = gsap.timeline({
   scrollTrigger: {
-    trigger: section_2,
+    trigger: "#projects",
+    scrub: true,
     pin: true,
-    scrub: 5,
-    snap: 1 / (box_items.length - 1),
-    endTrigger: ".projectitem:last-child",
-    end: "center"
+    start: "top top",
+    end: "+=100%"
   }
 });
+tlproject.fromTo(".circle1", {x: -300, y: -500, autoAlpha: 0}, {x: -300, y: -100, autoAlpha: 1, duration: 0.5},0)
+         .fromTo(".circle2", {x: 1500, y:-200, autoAlpha: 1}, {x: 700, autoAlpha: 1, duration: 0.5},0)
+         .fromTo(".circle3", {x: -1300, autoAlpha: 1}, {x: -700, y: 100, autoAlpha: 1, duration: 0.5},0)
+         .fromTo(".circle4", {x: 2000,y:1000, autoAlpha: 1}, {x: 500,y:500, autoAlpha: 1, duration: 0.5},0)

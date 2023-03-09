@@ -55,15 +55,25 @@ html, body {
       }
   }
 
-  @media screen and (max-width: 1210px) {
+  @media screen and (max-width: 1265px) {
     .aboutbody{
-      font-size: 1rem;
       margin-left: 2rem !important;
       margin-right: 2rem !important;
       margin-top: 5rem !important;
       margin-bottom: 5rem !important;
       }
   }
+  @media only screen and (min-width: 1210px) and (max-width: 1120px) {
+    .aboutbody{
+
+    }
+  }
+  @media only screen and (min-width: 1020px) and (max-width: 1120px) {
+    .aboutbody{
+      font-size: 0.75rem;
+    }
+  }
+
 .navbar{
     background-color: transparent;
     width: 100%; 
@@ -440,7 +450,9 @@ justify-content: center;
 }
 
 .projectContainer{
-  margin-top: 3rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
 }
 .projectcontent {
   display: flex;
@@ -450,16 +462,62 @@ justify-content: center;
 
 .projectitem {
   border: 1px solid #efefef;
-  width: 2000px;
-  height: 500px;
+  width: 75rem;
+  height: 35rem;
+  display: flex;
+  align-items: center;
+
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(255,255,255,0.1);
+  overflow: hidden;
+  border-top: 1px solid rgba(255,255,255,0.5);
+  border-left: 1px solid rgba(255,255,255,0.5);
+  backdrop-filter: blur(5px);
 }
 .projectitem:not(:last-child) {
   margin-right: 4rem;
 }
 
+.thumbnail {
+  flex: 0 0 auto;
+  margin-right: 10px;
+  margin-left: 10px;
+  max-width: 40rem;
+}
 
+.projectnum{
+ font-size: 3rem;
+}
 
+.circle1, .circle2, .circle3, .circle4{
+  border-radius: 50%;
+  position: fixed;
+}
 
+.circle1{
+  background: black;
+  width: 200px;
+  height: 200px;
+}
+
+.circle2{
+  background: red;
+  width: 400px;
+  height: 400px;
+}
+
+.circle3{
+  background: green;
+  width: 300px;
+  height: 300px;
+}
+
+.circle4{
+  background: purple;
+  width: 200px;
+  height: 200px;
+}
 
 #contact{
     background-color: #DEC9E9;

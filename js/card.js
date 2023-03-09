@@ -80,7 +80,7 @@ Draggable.create("#css",{
     type: "x,y",
     liveSnap: {
         points: [ 
-            {x:0, y:-325},
+            {x:0, y:0},
         ],
       radius: 50
     }
@@ -91,7 +91,7 @@ Draggable.create("#boot",{
     type: "x,y",
     liveSnap: {
         points: [ 
-            {x:0, y:-325},
+            {x:0, y:0},
         ],
         radius: 50
     }
@@ -102,7 +102,7 @@ Draggable.create("#mysql",{
     type: "x,y",
     liveSnap: {
         points: [ 
-            {x:0, y:-325} ],
+            {x:0, y:0} ],
         radius: 50
     }
 })
@@ -112,7 +112,7 @@ Draggable.create("#post",{
     type: "x,y",
     liveSnap: {
         points: [ 
-            {x:0, y:-325} ],
+            {x:0, y:0} ],
         radius: 50
     }
 })
@@ -122,7 +122,7 @@ Draggable.create("#docker",{
     type: "x,y",
     liveSnap: {
         points: [ 
-            {x:0, y:-325} ],
+            {x:0, y:0} ],
         radius: 50
     }
 })
@@ -132,7 +132,7 @@ Draggable.create("#spring",{
     type: "x,y",
     liveSnap: {
         points: [ 
-            {x:0, y:-325} ],
+            {x:0, y:0} ],
         radius: 50
     }
 })
@@ -142,7 +142,7 @@ Draggable.create("#gsap",{
     type: "x,y",
     liveSnap: {
         points: [
-            {x:0, y:-650},
+            {x:0, y:0},
             ],
         radius: 50
     }
@@ -153,7 +153,7 @@ Draggable.create("#git",{
     type: "x,y",
     liveSnap: {
         points: [
-            {x:0, y:-650},
+            {x:0, y:0},
                   ],
         radius: 50
     }
