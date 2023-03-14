@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Shantell+Sans:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <section id="mobileSite">
@@ -135,62 +137,65 @@
           <i></i>
         </div>
     </section>
-      
+    
     <section id="projects">
       <h1 id="projectText">projects</h1>
       <div class="projectContainer">
-
         <div class="circle1"></div>
         <div class="circle2"></div>
         <div class="circle3"></div>
         <div class="circle4"></div>
-
+        <div class="circle5"></div>
+        <div class="circle6"></div>
         <div class="projectcontent">
-
-            <div class="projectitem">
-              <div class="thumbnail">
-                <img src="img/projects/moodmixer.png" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="card-body">
-                <h5 class="card-title"><div class="projectnum">MoodMixer</div></h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-              </div>
-
-              <!-- <div class="projectitem">
-                <div class="thumbnail">
-                  <img src="img/projects/vectorWrld.png" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title"><div class="projectnum">1</div></h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-                </div>
-
-                <div class="projectitem">
-                  <div class="thumbnail">
-                    <img src="img/projects/RandomNumGuesser.png" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title"><div class="projectnum">1</div></h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                  </div> -->
-      
+          <div class="projectitem">
+            <div class="thumbnail">
+              <img src="img/projects/moodmixer.png" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><div class="projectnum">MoodMixer</div></h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+    
+          <div class="projectitem">
+            <div class="thumbnail">
+              <img src="img/projects/vectorWrld.png" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><div class="projectnum">1</div></h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+    
+          <div class="projectitem">
+            <div class="thumbnail">
+              <img src="img/projects/RandomNumGuesser.png" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><div class="projectnum">1</div></h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
   <section id="contact">
-    <h1>contact</h1>
-
+    <h1 class="contactTitle">contact</h1>
+      <div class="cardCon">
+        <form action="action_page.php">
+          <input type="text" id="fname" name="firstname" placeholder="First Name">
+          <input type="text" id="lname" name="lastname" placeholder="Last Name">
+          <input type="text" id="email" name="email" placeholder="Email">
+          <br><input type="submit" value="Submit"
+        </form>
+      </div>
   </section>
-
-
-
+  
   <script src="js/splineScript.js" type="module"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
@@ -201,5 +206,4 @@
   <script src="js/card.js" type="module" defer></script>
   <script src="js/gsap.js" type="module"></script>
   <script src="js/nav.js" type="module"></script>
-
 </html>

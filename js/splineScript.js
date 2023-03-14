@@ -34,7 +34,7 @@ setTimeout(() => {
      clipPath: "circle(100% at 50% 50%)",
      ease: "none",
      duration: 1.5,
-     delay: 1.8
+     delay: 2
    }
  );
  })
