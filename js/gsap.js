@@ -77,9 +77,26 @@ var tlproject = gsap.timeline({
     end: "+=50%"
   }
 });
-tlproject.fromTo(".circle1", {x: -300, y: -500, autoAlpha: 0}, {x: -300, y: -100, autoAlpha: 1, duration: 1},0)
-         .fromTo(".circle2", {x: 1500, y:-200, autoAlpha: 0}, {x: 700, autoAlpha: 1, duration: 1},0)
-         .fromTo(".circle3", {x: -1500, autoAlpha: 0}, {x: -700, y: 100, autoAlpha: 1, duration: 1},0)
-         .fromTo(".circle4", {x: 2000,y:1000, autoAlpha: 0}, {x: 500,y:500, autoAlpha: 1, duration: 1},0)
-         .fromTo(".circle5", {x: -1000,y:2000, autoAlpha: 0}, {x: -500,y:540, autoAlpha: 1, duration: 1},0)
-         .fromTo(".circle6", {x: 500,y:500, autoAlpha: 0}, {x: 200,y:100, autoAlpha: 1, duration: 1})
+tlproject.fromTo(".circle1", {x: -300, y: -500, autoAlpha: 0}, {x: -400, y: -175, autoAlpha: 1, duration: 1},0)
+         .fromTo(".circle2", {x: 1500, y:-200, autoAlpha: 0}, {x: 800, autoAlpha: 1, duration: 1},0)
+         .fromTo(".circle3", {x: -1500, autoAlpha: 0}, {x: -900, y: 100, autoAlpha: 1, duration: 1},0)
+         .fromTo(".circle4", {x: 2000,y:1000, autoAlpha: 0}, {x:600,y:500, autoAlpha: 1, duration: 1},0)
+         .fromTo(".circle5", {x: -1000,y:2000, autoAlpha: 0}, {x: -500,y:500, autoAlpha: 1, duration: 1},0)
+
+         
+//Contact section for 1080 p
+var tlCon = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#contact",
+    scrub: true,
+    pin: true, 
+    start: "top top",
+    end: "+=100%"
+  }
+})
+
+tlCon.fromTo(".mountain1",{x:1000, y:150, autoAlpha: 1}, {x: 0, y: 0, autoAlpha: 1, duration: 1},0)
+     .fromTo(".mountain2",{x:-1500, y:150, autoAlpha: 1}, {x: 0, y: 0, autoAlpha: 1, duration: 1},0)
+     .fromTo(".mountain3",{x:1000, y:150, autoAlpha: 1}, {x: 0, y: 0, autoAlpha: 1, duration: 1},1)
+     .fromTo(".mountain4",{x:0, y:1200, autoAlpha: 1}, {x: 0, y: 0, autoAlpha: 1, duration: 1.5},2)
+     .fromTo(".cardCon",{x:0, y:1000, autoAlpha: 1}, {x: 0, y: 0, autoAlpha: 1, duration: 1.5},3)

@@ -1,3 +1,4 @@
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -384,7 +385,6 @@ justify-content: center;
   background-color: #815AC0;
   background: linear-gradient(to bottom, #815AC0, #B185DB);
   height: 120vh;
-  border: 3px solid red;
 }
 .skilltext{
   color: white;
@@ -441,7 +441,6 @@ justify-content: center;
   margin: 0 !important;
   height: 100%;
   text-align: center;
-  border: 2px solid green;
 }
 
 #projectText{
@@ -467,8 +466,6 @@ justify-content: center;
   height: 35rem;
   display: flex;
   align-items: center;
-
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
   background: rgba(255,255,255,0.1);
   overflow: hidden;
@@ -551,7 +548,7 @@ justify-content: center;
   );
   box-shadow: inset 0 0 20px #fff, inset 10px 0 46px #eaf5fc,
     inset 88px 0px 60px #ecc2fe, inset -20px -60px 100px #fde9ea,
-    inset 0 50px 140px #fde9ea, 0 0 90px #fff;
+    inset 0 50px 10px #fde9ea, 0 0 90px #fff;
   width: 200px;
   height: 200px;
 }
@@ -559,7 +556,7 @@ justify-content: center;
 
 #contact{
     background-color: #DEC9E9;
-    background: linear-gradient(to bottom, #DEC9E9, white);
+    background: linear-gradient(to bottom, #DEC9E9, white, rgb(133, 179, 244));
     margin: 0 !important;
     display: flex;
     flex-direction: column;
@@ -568,19 +565,42 @@ justify-content: center;
     height: 100vh;
 }
 
-.contactTitle{
-  margin-bottom: 2rem;
+.mountain1,.mountain2{
+  position: absolute;
+  z-index: 1;
+}
+
+.mountain3{
+  position: absolute;
+  z-index: -1;
+}
+
+.mountain4{
+  position: absolute;
+  z-index: -2;
+}
+
+@media screen and (min-width: 2230px){
+  .mountain4{
+    transform: scale(1.169);
+  }
 }
 
 .cardCon {
   width: 20rem;
   height: 30rem;
-  border-radius: 15px;
-  background-color: white;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 1;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(255,255,255,0.1);
+  overflow: hidden;
+  border-top: 1px solid rgba(255,255,255,0.5);
+  border-left: 1px solid rgba(255,255,255,0.5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 .cardCon form {
   display: flex;
