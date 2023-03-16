@@ -147,8 +147,9 @@
         <div class="circle4"></div>
         <div class="circle5"></div>
         <div class="circle6"></div>
+        <button class="prev">Prev</button>
         <div class="projectcontent">
-          <div class="projectitem">
+          <div class="projectitem" id="card1">
             <div class="thumbnail">
               <img src="img/projects/moodmixer.png" class="img-fluid rounded-start" alt="...">
             </div>
@@ -159,7 +160,7 @@
             </div>
           </div>
     
-          <div class="projectitem">
+          <div class="projectitem" id="card2">
             <div class="thumbnail">
               <img src="img/projects/vectorWrld.png" class="img-fluid rounded-start" alt="...">
             </div>
@@ -170,7 +171,7 @@
             </div>
           </div>
     
-          <div class="projectitem">
+          <div class="projectitem" id="card3">
             <div class="thumbnail">
               <img src="img/projects/RandomNumGuesser.png" class="img-fluid rounded-start" alt="...">
             </div>
@@ -180,15 +181,18 @@
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
           </div>
+
+          
         </div>
+        <button class="next">Next</button>
       </div>
     </section>
 
   <section id="contact">
-    <img src="img/contact/1.PNG" class="mountain1">
-    <img src="img/contact/2.PNG" class="mountain2">
-    <img src="img/contact/3.PNG" class="mountain3">
-    <img src="img/contact/4.PNG" class="mountain4">
+    <img src="img/contact/1.PNG" class="mountain1" alt="mountain">
+    <img src="img/contact/2.PNG" class="mountain2" alt="mountain">
+    <img src="img/contact/3.PNG" class="mountain3" alt="mountain">
+    <img src="img/contact/4.PNG" class="mountain4" alt="mountain">
       <div class="cardCon">
         <form action="action_page.php">
           <input type="text" id="fname" name="firstname" placeholder="First Name">
@@ -209,4 +213,6 @@
   <script src="js/card.js" type="module" defer></script>
   <script src="js/gsap.js" type="module"></script>
   <script src="js/nav.js" type="module"></script>
+  <script src="js/project.js" type="module"></script>
+  <script src="js/mountain.js" type="module"></script>
 </html>

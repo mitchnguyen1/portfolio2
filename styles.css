@@ -448,15 +448,37 @@ justify-content: center;
   color: white;
   padding-top: 3rem;
 }
-
+@media screen and (min-width: 2500px) {
+  #projectText{
+    padding-top: 4rem;
+  }
+}
 .projectContainer{
   margin-top: 2rem;
   display: flex;
   justify-content: center;
 }
+.next,.prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 1;
+}
+
+button.prev {
+  left: 0;
+}
+
+button.next {
+  right: 0;
+}
 .projectcontent {
   display: flex;
-  margin-left: 5rem;
+  /* margin-left: 5rem; */
   margin-right: 5rem
 }
 
@@ -473,7 +495,13 @@ justify-content: center;
   border-left: 1px solid rgba(255,255,255,0.5);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+  
 }
+
+.projectitem:not(:last-child) {
+  margin-right: 4rem;
+}
+
 .projectitem:not(:last-child) {
   margin-right: 4rem;
 }
@@ -605,6 +633,7 @@ justify-content: center;
 
 .mountain4{
   position: absolute;
+
   z-index: -2;
 }
 
