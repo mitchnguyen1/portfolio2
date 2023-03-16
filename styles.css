@@ -495,7 +495,12 @@ justify-content: center;
 }
 
 .circle1{
-  background: radial-gradient(circle at 75% 30%, #FCCED1 5px, #FCCED1 8%, #F7A3B0 60%, #F0657D 100%);
+  background: radial-gradient(
+    circle at 75% 30%,
+    #FCCED1 5px, 
+    #ff0011 8%,
+     #F7A3B0 60%,
+      #F0657D 100%);
   box-shadow: inset 0 0 20px #fff, inset 10px 0 46px #eaf5fc, inset 88px 0px 60px #F9A3B0, inset -20px -60px 100px #FCCED1, inset 0 50px 140px #FCCED1, 0 0 90px #ffffff;
   width: 200px;
   height: 200px;
@@ -520,7 +525,7 @@ justify-content: center;
   background: radial-gradient(
     circle at 75% 30%,
     white 5px,
-    #fdffb6 8%,
+    #f6ff00 8%,
     #fdffb6 60%,
     #f1f66d 100%
   );
@@ -532,8 +537,18 @@ justify-content: center;
 }
 
 .circle4{
-  background: radial-gradient(circle at 75% 30%, #9CE2AE 5px, #9CE2AE 8%, #56C596 60%, #28B485 100%);
-  box-shadow: inset 0 0 20px #fff, inset 10px 0 46px #eaf5fc, inset 88px 0px 60px #6ECB8F, inset -20px -60px 100px #9CE2AE, inset 0 50px 140px #9CE2AE, 0 0 90px #ffffff;  
+  background: radial-gradient(
+    circle at 75% 30%,
+     #ffffff 5px,
+      #00ff40 8%,
+       #00ff40 60%, 
+       #26ff00 100%);
+  box-shadow: inset 0 0 20px #fff,
+   inset 10px 0 46px #eaf5fc, 
+   inset 88px 0px 60px #6ECB8F, 
+   inset -20px -60px 100px #9CE2AE,
+    inset 0 50px 10px #9CE2AE,
+     0 0 90px #ffffff;  
   width: 200px;
   height: 200px;
 }
@@ -552,7 +567,20 @@ justify-content: center;
   width: 200px;
   height: 200px;
 }
-
+.circle6{
+  background: radial-gradient(
+    circle at 75% 30%,
+    rgb(255, 255, 255) 5px,
+    rgb(9, 34, 255) 8%,
+    rgb(128, 0, 255) 60%,
+    rgb(255, 0, 0) 100%
+  );
+  box-shadow: inset 0 0 20px #fff, inset 10px 0 46px #eaf5fc,
+    inset 88px 0px 60px #de9ff9, inset -20px -60px 100px #fde9ea,
+    inset 0 50px 10px #fde9ea, 0 0 90px #fff;
+  width: 200px;
+  height: 200px;
+}
 
 #contact{
     background-color: #DEC9E9;
