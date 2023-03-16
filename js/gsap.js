@@ -81,8 +81,8 @@ tlproject.fromTo(".circle1", {x: -300, y: -500, autoAlpha: 0}, {x: -400, y: -175
          .fromTo(".circle2", {x: 1500, y:-200, autoAlpha: 0}, {x: 800, autoAlpha: 1, duration: 1},0)
          .fromTo(".circle3", {x: -1500, autoAlpha: 0}, {x: -900, y: 100, autoAlpha: 1, duration: 1},0)
          .fromTo(".circle4", {x: 2000,y:1000, autoAlpha: 0}, {x:850,y:400, autoAlpha: 1, duration: 1},0)
-         .fromTo(".circle5", {x: -1000,y:2000, autoAlpha: 0}, {x: 100,y:450, autoAlpha: 1, duration: 1},0)
-         .fromTo(".circle6", {x:100,y:-400, autoAlpha: 0}, {x: 300,y:0, autoAlpha: 1, duration: 1},0)
+         .fromTo(".circle5", {x: -1000,y:2000, autoAlpha: 0}, {x: 300,y:300, autoAlpha: 1, duration: 1},0)
+         .fromTo(".circle6", {x:100,y:-400, autoAlpha: 0}, {x: 250,y:-100, autoAlpha: 1, duration: 1},0)
 
          
 //Contact section for 1080 p
