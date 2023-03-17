@@ -14,24 +14,30 @@ var tlAbout = gsap.timeline({
     end: "+=100%"
   }
 });
+
 tlAbout.fromTo(
-    about,
-    {
-        clipPath: "circle(0% at 49.6% 15%)",
-        duration: 2,
-        ease: "sine.inOut"
-    },
-    {
-        clipPath: "circle(75% at 50% 50%)",
-        duration: 2,
-        ease: "sine.inOut"
-    }
-).from(".button", {
-    y: 100,
-    opacity: 0,
-    ease: "elastic.out(2,1.5)", // add a spring effect
-    duration: 1,
-  });
+  about,
+  {
+    clipPath: "circle(0% at 49.6% 15%)",
+    duration: 2,
+    ease: "sine.inOut"
+  },
+  {
+    clipPath: "circle(75% at 50% 50%)",
+    duration: 2,
+    ease: "sine.inOut"
+  }
+).from(".bold", {
+  autoAlpha: 0,
+  duration: 1,
+  stagger: 0.2, // add a stagger value to delay each bold word
+}).from(".button", {
+  y: 100,
+  opacity: 0,
+  ease: "elastic.out(2,1.5)",
+  duration: 1,
+})
+
   
 
 //skills cards movement
