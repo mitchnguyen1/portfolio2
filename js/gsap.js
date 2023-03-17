@@ -74,7 +74,7 @@ var tlproject = gsap.timeline({
     scrub: true,
     pin: true,
     start: "top top",
-    end: "+=50%"
+    end: "+=100%"
   }
 });
 tlproject.fromTo(".circle1", {x: -300, y: -500, autoAlpha: 0}, {x: -400, y: -175, autoAlpha: 1, duration: 1},0)
