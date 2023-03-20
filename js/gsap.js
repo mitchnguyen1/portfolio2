@@ -16,27 +16,52 @@ var tlAbout = gsap.timeline({
 });
 
 tlAbout.fromTo(
+  "#smile1",
+  {
+    opacity: 0,
+    x: -900,
+    rotation: 0
+  },
+  {
+    opacity: 1,
+    x: 0,
+    rotation: 360,
+    duration: 2,
+    ease: "linear"
+  }
+).fromTo(
   about,
   {
     clipPath: "circle(0% at 49.6% 15%)",
+    opacity: 0,
     duration: 2,
     ease: "sine.inOut"
   },
   {
     clipPath: "circle(75% at 50% 50%)",
+    opacity: 1,
     duration: 2,
     ease: "sine.inOut"
+  },
+  "-=1.8" // add a negative delay to start this animation 1.8 seconds earlier
+).from(
+  [".bold", "#smile2"], // include smile1 in the animation along with the bold words
+  {
+    autoAlpha: 0,
+    duration: 1.5,
+    stagger: 0.2, // add a stagger value to delay each bold word
+    ease: "sine.inOut", // add an easing function
+    x: 500, // add x-axis animation for smile1
+    rotation: 180, // add rotation animation for smile1
   }
-).from(".bold", {
-  autoAlpha: 0,
-  duration: 1,
-  stagger: 0.2, // add a stagger value to delay each bold word
-}).from(".button", {
+).from(".button", {
   y: 100,
   opacity: 0,
   ease: "elastic.out(2,1.5)",
-  duration: 1,
-})
+  duration: 1
+});
+
+
 
   
 
