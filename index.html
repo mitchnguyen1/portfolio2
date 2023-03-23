@@ -54,7 +54,7 @@
           with exceptional <span class="bold" style="font-family: 'Freitag';color: white;  -webkit-text-stroke: 2px rgb(0, 0, 0);">problem-solving skills.</span><br>
           I'm constantly pushing beyond my boundaries <br>
           to deliver <span class="bold" style="font-family: 'Freitag';color: white;  -webkit-text-stroke: 2px black;">outstanding results.</span></p>        
-        <button class="button">Download Resume</button>
+        <button class="button" onclick="downloadResume()">Download Resume</button>
       </section>
       
       
@@ -156,7 +156,7 @@
         <div class="circle4"></div>
         <div class="circle5"></div>
         <div class="circle6"></div>
-        <button class="prev"> </button>
+        <button class="prev">Prev</button>
         <div class="projectcontent">
           <div class="projectitem" id="card1">
             <div class="thumbnail">
@@ -193,7 +193,7 @@
 
           
         </div>
-        <button class="next"> </button>
+        <button class="next">Next</button>
       </div>
     </section>
 
@@ -206,15 +206,15 @@
       <h1 >Contact</h1>
       <form action="action_page.php">
         <input type="text" id="flname" name="Name" placeholder="Name" style="margin: .2rem;">
-        <input type="text" id="email" name="Email" placeholder="Email"style="margin: .2rem;">
-        <!-- <input type="text" id="message" name="Message" placeholder="Message"style="margin: .2rem;"> -->
-        <textarea id="message"placeholder="Message"style="margin: .2rem;" rows="3" cols="23"></textarea>
+        <input type="email" id="email" name="Email" placeholder="Email"style="margin: .2rem;">
+        <textarea type="text" id="message" name="message" placeholder="Message" style="margin: .2rem;" rows="3" cols="23"></textarea>
         <br><input type="submit" value="Submit" class="submit">
       </form>
       <div class="icons">
-      <i class="fa fa-github" style="font-size:4rem;"></i>
-      <i class="fa-brands fa-linkedin " style="color: #0a66c2; font-size: 4rem;"></i>
+        <a href="https://github.com/mitchnguyen1" target="_blank"><i class="fa fa-github" style="font-size:4rem;color:black;"></i></a>
+        <a href="https://www.linkedin.com/in/mitchellnguyen504/" target="_blank"><i class="fab fa-linkedin" style="color: #1d7cdb; font-size: 4rem;"></i></a>
       </div>
+      
     </div>
 
     
@@ -232,5 +232,24 @@
   <script src="js/nav.js" type="module"></script>
   <script src="js/project.js" type="module"></script>
   <script src="js/mountain.js" type="module"></script>
+  <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
   <script src="https://kit.fontawesome.com/4395f339c6.js" crossorigin="anonymous"></script>
+  <script>
+    function downloadResume() {
+  const url = "../img/about/Resume.pdf";
+  const filename = "Resume.pdf";
+  fetch(url)
+    .then(response => response.blob())
+    .then(blob => {
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      a.target = "_blank"; // add this line to open in a new tab
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+    });
+}
+  </script>
 </html>

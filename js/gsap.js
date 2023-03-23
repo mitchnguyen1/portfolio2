@@ -58,11 +58,13 @@ tlAbout.fromTo(
   }
 )
 .from(".button", {
-  y: 100,
+  y: 200,
   opacity: 0,
-  ease: "elastic.out(2,1.5)",
+  ease: "elastic.out(1, 0.75)",
   duration: 1
 });
+
+
 
 //skills cards movement
 var tlCard = gsap.timeline({
