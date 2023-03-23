@@ -647,7 +647,25 @@ margin-top: -2rem;
   padding: 0 15px;
 }
 
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
 
+
+.btn1{
+  border: 2px solid black;
+  border-radius: 50px;
+  padding: .5rem 1rem;
+  margin-right: 1rem;
+  text-decoration: none;
+  color: black;
+   margin-top: auto;
+  margin-bottom: auto;
+
+}
 .projectnum{
  font-size: 3rem;
 }
