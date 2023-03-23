@@ -4,43 +4,43 @@
 }
 @font-face {
   font-family: "Pokemon GB";
-  src:url("img/PokemonGb-RAeo.ttf") format("truetype");
+  src:url("img/font/PokemonGb-RAeo.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Bilgres";
-  src:url("img/BilgresDemoRegular.ttf") format("truetype");
+  src:url("img/font/BilgresDemoRegular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Freitag";
-  src: url('img/Freitag-Display-M-trial.ttf') format("truetype");
+  src: url('img/font/Freitag-Display-M-trial.ttf') format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "paint";
-  src: url('img/Paint\ On\ The\ Wall.ttf') format("truetype");
+  src: url('img/font/Paint\ On\ The\ Wall.ttf') format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "air";
-  src: url('img/Airfool.otf') format("truetype");
+  src: url('img/font/Airfool.otf') format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "mountain";
-  src: url('img/MADEMountain-Regular.otf') format("truetype");
+  src: url('img/font/MADEMountain-Regular.otf') format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "jan";
-  src:url("img/JandaManateeBubble.ttf") format("truetype");
+  src:url("img/font/JandaManateeBubble.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -793,7 +793,7 @@ margin-top: -2rem;
   font-size: 5rem; /* adjust as needed */
   margin-top: 1rem; 
   font-family: 'mountain';
-  background-image: url(img/IMG_0198.PNG);
+  background-image: url(img/contactTextBG.PNG);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

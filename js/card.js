@@ -1,3 +1,4 @@
+gsap.registerPlugin(ScrollTrigger);
 const container = document.getElementById("skills")
 const python = document.getElementById("python")
 const java = document.getElementById("java")
@@ -12,8 +13,6 @@ const spring = document.getElementById("spring")
 const gsap = document.getElementById("gsap")
 const git = document.getElementById("git")
 const reset =  document.querySelector('.reset');
-
-
 
 //reset cards position
 reset.addEventListener('click',() =>{
@@ -158,3 +157,5 @@ Draggable.create("#git",{
         radius: 50
     }
 })
+
+
