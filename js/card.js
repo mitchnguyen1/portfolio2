@@ -1,4 +1,3 @@
-gsap.registerPlugin(ScrollTrigger);
 const container = document.getElementById("skills")
 const python = document.getElementById("python")
 const java = document.getElementById("java")
