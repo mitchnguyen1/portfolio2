@@ -802,6 +802,7 @@ margin-top: -2rem;
 
 .cardCon {
   position: relative;
+  top: -2rem;
   width: 20rem;
   height: 30rem;
   display: flex;

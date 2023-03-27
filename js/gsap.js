@@ -10,6 +10,19 @@ scrollButton.addEventListener("click", function() {
   gsap.to(window, {duration: 1, scrollTo: {y: "#projects", offsetY: 50}});
 });
 
+//refresh to top 
+// Scroll to the top of the page when the window is loaded or refreshed
+window.onload = function () {
+  setTimeout(function() {
+    document.documentElement.scrollTop = 0; // For modern browsers
+    document.body.scrollTop = 0; // For old IE versions
+  }, 0);
+}
+
+
+
+
+
 //about section curtains
 var tlAbout = gsap.timeline({
   scrollTrigger: {
@@ -21,23 +34,23 @@ var tlAbout = gsap.timeline({
   }
 });
 
-tlAbout.fromTo(
-  [about],
-  {
-    clipPath: "circle(0% at 49.6% 15%)",
-    opacity: 0,
-    duration: 2,
-    ease: "sine.inOut"
-  },
-  {
-    clipPath: "circle(75% at 50% 50%)",
-    opacity: 1,
-    duration: 2,
-    ease: "sine.inOut"
-  },
-  "-=1.3"
-)
-.from(
+// tlAbout.fromTo(
+//   [about],
+//   {
+//     clipPath: "circle(0% at 49.6% 15%)",
+//     opacity: 0,
+//     duration: 2,
+//     ease: "sine.inOut"
+//   },
+//   {
+//     clipPath: "circle(75% at 50% 50%)",
+//     opacity: 1,
+//     duration: 2,
+//     ease: "sine.inOut"
+//   },
+//   "-=1.3"
+// )
+tlAbout.from(
   ".bold",
   {
     autoAlpha: 0,
