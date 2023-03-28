@@ -34,23 +34,22 @@ var tlAbout = gsap.timeline({
   }
 });
 
-// tlAbout.fromTo(
-//   [about],
-//   {
-//     clipPath: "circle(0% at 49.6% 15%)",
-//     opacity: 0,
-//     duration: 2,
-//     ease: "sine.inOut"
-//   },
-//   {
-//     clipPath: "circle(75% at 50% 50%)",
-//     opacity: 1,
-//     duration: 2,
-//     ease: "sine.inOut"
-//   },
-//   "-=1.3"
-// )
-tlAbout.from(
+tlAbout.fromTo(
+  [about],
+  {
+    clipPath: "circle(0% at 49.6% 15%)",
+    opacity: 0,
+    duration: 2,
+    ease: "sine.inOut"
+  },
+  {
+    clipPath: "circle(75% at 50% 50%)",
+    opacity: 1,
+    duration: 2,
+    ease: "sine.inOut"
+  },
+  "-=1.3"
+).from(
   ".bold",
   {
     autoAlpha: 0,
