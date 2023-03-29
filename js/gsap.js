@@ -10,14 +10,14 @@ scrollButton.addEventListener("click", function() {
   gsap.to(window, {duration: 1, scrollTo: {y: "#projects", offsetY: 50}});
 });
 
-//refresh to top 
+
 // Scroll to the top of the page when the window is loaded or refreshed
-// window.onload = function () {
-//   setTimeout(function() {
-//     document.documentElement.scrollTop = 0; // For modern browsers
-//     document.body.scrollTop = 0; // For old IE versions
-//   }, 0);
-// }
+window.onload = function () {
+  setTimeout(function() {
+    document.documentElement.scrollTop = 0; // For modern browsers
+    document.body.scrollTop = 0; // For old IE versions
+  }, 0);
+}
 
 
 
