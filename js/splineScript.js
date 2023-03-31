@@ -3,13 +3,25 @@ const canvas = document.getElementById('canvas3d');
 const threeD = document.getElementById('threeD');
 const nav = document.querySelector('.navbar');
 const box = document.querySelector('.box1');
+const box2 = document.querySelector('.box2');
+const flower =  document.getElementById('flower');
+const laptop =  document.getElementById('laptop');
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
 const heart = document.getElementById('heart');
 const app = new Application(canvas);
+
 
 // hide the canvas and navbar and scroll initially
 canvas.style.display = 'none';
 nav.style.display = 'none';
+// flower.style.display = 'none';
+// laptop.style.display = 'none';
+// prev.style.display = 'none';
+// next.style.display = 'none';
+
 document.body.style.overflowY = 'hidden';
+
 
 // // load the scene and enclose into the heart
 setTimeout(() => {
@@ -43,6 +55,11 @@ setTimeout(() => {
      //display canvas and while hiding the splash screen
      canvas.style.display = 'block';
      box.style.display = "block";
+    //  flower.style.display = 'block';
+    //  laptop.style.display = 'block';
+    //  prev.style.display = 'block';
+    //  next.style.display = 'block';
+     
      //hide polka and heart
      heart.style.display = "none";
      threeD.style.backgroundImage = "none";

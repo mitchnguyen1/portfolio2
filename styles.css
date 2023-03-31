@@ -353,10 +353,10 @@ margin-top: -2rem;
   -webkit-text-stroke: 2px black;
 }
 
-#smile1,
-#smile2,
+
 #laptop,
 #flower {
+  display:block ;
   position: absolute;
   z-index: -1; /* set z-index to a negative value */
   transform: scale(0.4);
@@ -516,6 +516,7 @@ margin-top: -2rem;
   width: 10rem;
   height: 14rem;
   margin: 10px;
+  margin-bottom: 0rem;
   z-index: 0;
 }
 .card-body {
@@ -547,6 +548,11 @@ hr {
   font-family: 'gamon';
   color:white;
   -webkit-text-stroke: 2px black;
+}
+.card-text1{
+  text-align: center;
+  font-size: 1.5rem; 
+  margin-bottom: 0px;
 }
 .stack {
   display: flex;
@@ -640,6 +646,7 @@ hr {
   justify-content: center;
 }
 .prev, .next {
+  display: block;
   font-family: 'jan';
   -webkit-text-stroke: 0.5px rgb(0, 0, 0);
   text-stroke: 0.5px rgb(0, 0, 0);
