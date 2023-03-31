@@ -15,10 +15,10 @@ const app = new Application(canvas);
 // hide the canvas and navbar and scroll initially
 canvas.style.display = 'none';
 nav.style.display = 'none';
-// flower.style.display = 'none';
-// laptop.style.display = 'none';
-// prev.style.display = 'none';
-// next.style.display = 'none';
+flower.style.display = 'none';
+laptop.style.display = 'none';
+prev.style.display = 'none';
+next.style.display = 'none';
 
 document.body.style.overflowY = 'hidden';
 
@@ -55,10 +55,10 @@ setTimeout(() => {
      //display canvas and while hiding the splash screen
      canvas.style.display = 'block';
      box.style.display = "block";
-    //  flower.style.display = 'block';
-    //  laptop.style.display = 'block';
-    //  prev.style.display = 'block';
-    //  next.style.display = 'block';
+     flower.style.display = 'block';
+     laptop.style.display = 'block';
+     prev.style.display = 'block';
+     next.style.display = 'block';
      
      //hide polka and heart
      heart.style.display = "none";
