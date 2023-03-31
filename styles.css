@@ -127,8 +127,11 @@ html, body {
     }
   }
 
-
+header{
+  display: none;
+}
 .navbar{
+    display: block;
     background-color: transparent;
     width: 100%; 
     text-align: center;
@@ -166,7 +169,7 @@ html, body {
 
   }
 canvas {
-    display: block;
+    display: none;
     margin: 0 auto;
     height:  100% !important; /* set the height to 100% to fill the available vertical space */
     width: 100% !important; /* set the width to auto to maintain the aspect ratio */
@@ -258,7 +261,7 @@ canvas {
 }
 .box2 {
   z-index: 0;
-  display: block;
+  display: none;
   position:absolute;
   bottom:25vh;
   font-size: 2vh;
@@ -356,7 +359,7 @@ margin-top: -2rem;
 
 #laptop,
 #flower {
-  display:block ;
+  display: none;
   position: absolute;
   z-index: -1; /* set z-index to a negative value */
   transform: scale(0.4);
@@ -646,7 +649,7 @@ hr {
   justify-content: center;
 }
 .prev, .next {
-  display: block;
+  display: none;
   font-family: 'jan';
   -webkit-text-stroke: 0.5px rgb(0, 0, 0);
   text-stroke: 0.5px rgb(0, 0, 0);
