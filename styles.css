@@ -59,6 +59,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     background-color: black !important;
+    height: auto;
   }
 
 html, body {
@@ -854,30 +855,41 @@ hr {
     height: 100vh;
 }
 
-.mountain1,.mountain2{
+.mountain1{
   position: absolute;
-  z-index: 1;
+  z-index: 2;
+  bottom: 0;
+  right:0
+}
+.mountain2{
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left:0
 }
 
 .mountain3{
   position: absolute;
-  z-index: -1;
+  z-index: 1;
+  bottom: 0;
+  right:0
 }
 
 .mountain4{
   position: absolute;
-
-  z-index: -2;
+  bottom:0
 }
 
 @media screen and (min-width: 2230px){
   .mountain4{
-    transform: scale(1.169);
+    transform: scale(1.3);
+    bottom: 12vh;
   }
 }
 
 #contact {
   position: relative;
+  height: 100vh;
 }
 
 .cardCon {
@@ -969,5 +981,45 @@ input, #message {
   90% { transform: translate(-1px, 1px); }
   100% { transform: translate(0, 0); }
 }
+.red {
+  border: 2px solid red;
+}
 
+.green {
+  border: 2px solid green;
+}
 
+input.invalid, textarea.invalid {
+  border-color: red;
+}
+
+input.valid, textarea.valid {
+  border-color: green;
+}
+
+input.shake, textarea.shake {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-0.5rem);
+  }
+  50% {
+    transform: translateX(0.5rem);
+  }
+  75% {
+    transform: translateX(-0.5rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
